@@ -28,8 +28,8 @@ from langgraph.types import Send
 
 
 # Set environment variables
-os.environ["GOOGLE_API_KEY"] = "AIzaSyC-tD2CLEvboJflhoSSHswu5yMy0i2vB_Y"
-os.environ["TAVILY_API_KEY"] = "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"
+os.environ["GOOGLE_API_KEY"] = ""
+os.environ["TAVILY_API_KEY"] = ""
 
 # Router LLM
 router_llm = init_chat_model(model="gemini-3.1-flash-lite", model_provider="google_genai")
