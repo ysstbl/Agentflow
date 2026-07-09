@@ -35,9 +35,53 @@ agentflow/
 ├── main.py                 # Application entry point
 └── requirements.txt        # Python dependencies
 ```
-⚙️ Installation
-1.Clone the repository:
+## 🛠️ Prerequisites
 
-Bash
-git clone [https://github.com/yourusername/agentflow.git](https://github.com/yourusername/agentflow.git)
+Before you begin, ensure you have the following installed and set up:
+* **Python:** Version 3.10 or higher.
+* **Google Gemini API Key:** Get one from Google AI Studio.
+* **Tavily API Key:** Get one from Tavily.
+
+## ⚙️ Installation
+
+1. **Clone the repository:**
+git clone https://github.com/yourusername/agentflow.git
 cd agentflow
+
+
+2. **Create and activate a virtual environment:**
+Create the virtual environment
+python -m venv venv
+
+Activate it (macOS/Linux)
+source venv/bin/activate
+
+Activate it (Windows)
+venv\Scripts\activate
+
+
+3. **Install the required dependencies:**
+pip install -r requirements.txt
+
+
+4. **Set your Environment Variables:**
+macOS/Linux
+export GOOGLE_API_KEY="your_google_api_key_here"
+export TAVILY_API_KEY="your_tavily_api_key_here"
+
+Windows (Command Prompt)
+set GOOGLE_API_KEY="your_google_api_key_here"
+set TAVILY_API_KEY="your_tavily_api_key_here"
+
+
+## 💻 Usage
+
+Once your environment is set up and activated, run the main script to execute the workflow.
+
+python main.py
+
+
+## 🔮 Future Roadmap
+
+* Implement the `vector_store` for true RAG document retrieval (currently a placeholder).
+* Connect the LangGraph backend to a modern frontend interface (React/Tailwind) via a lightweight FastAPI
