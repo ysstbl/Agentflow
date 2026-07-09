@@ -51,27 +51,27 @@ cd agentflow
 
 2. **Create and activate a virtual environment:**\
 Create the virtual environment\
-python -m venv venv\
+python -m venv venv
 
 Activate it (macOS/Linux)\
-source venv/bin/activate\
+source venv/bin/activate
 
 Activate it (Windows)\
-venv\Scripts\activate\
+venv\Scripts\activate
 
 
 3. **Install the required dependencies:**\
-pip install -r requirements.txt\
+pip install -r requirements.txt
 
 
 4. **Set your Environment Variables:**\
 macOS/Linux\
 export GOOGLE_API_KEY="your_google_api_key_here"\
-export TAVILY_API_KEY="your_tavily_api_key_here"\
+export TAVILY_API_KEY="your_tavily_api_key_here"
 
 Windows (Command Prompt)\
 set GOOGLE_API_KEY="your_google_api_key_here"\
-set TAVILY_API_KEY="your_tavily_api_key_here"\
+set TAVILY_API_KEY="your_tavily_api_key_here"
 
 
 ## 💻 Usage
