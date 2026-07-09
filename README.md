@@ -44,41 +44,56 @@ Before you begin, ensure you have the following installed and set up:
 
 ## ⚙️ Installation
 
-1. **Clone the repository:**\
-git clone https://github.com/yourusername/agentflow.git\
+1. Clone this repository:
+
+```bash
+git clone https://github.com/yourusername/agentflow.git
 cd agentflow
+```
 
 
-2. **Create and activate a virtual environment:**\
-Create the virtual environment\
+2. **Create and activate a virtual environment:**
+Create the virtual environment
+```bash
 python -m venv venv
+ ```
 
-Activate it (macOS/Linux)\
+Activate it (macOS/Linux)
+```bash
 source venv/bin/activate
+ ```
 
-Activate it (Windows)\
+Activate it (Windows)
+```bash
 venv\Scripts\activate
+ ```
 
 
-3. **Install the required dependencies:**\
+3. **Install the required dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
-
-4. **Set your Environment Variables:**\
-macOS/Linux\
-export GOOGLE_API_KEY="your_google_api_key_here"\
+4. **Set your Environment Variables:**
+macOS/Linux
+```bash
+export GOOGLE_API_KEY="your_google_api_key_here"
 export TAVILY_API_KEY="your_tavily_api_key_here"
+```
 
-Windows (Command Prompt)\
-set GOOGLE_API_KEY="your_google_api_key_here"\
+Windows (Command Prompt)
+```bash
+set GOOGLE_API_KEY="your_google_api_key_here"
 set TAVILY_API_KEY="your_tavily_api_key_here"
+```
 
 
 ## 💻 Usage
 
 Once your environment is set up and activated, run the main script to execute the workflow.
-
+```bash
 python main.py
+```
 
 
 ## 🔮 Future Roadmap
