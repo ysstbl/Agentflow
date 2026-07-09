@@ -50,13 +50,13 @@ cd agentflow
 
 
 2. **Create and activate a virtual environment:**
-Create the virtual environment
+Create the virtual environment\
 python -m venv venv
 
-Activate it (macOS/Linux)
+Activate it (macOS/Linux)\
 source venv/bin/activate
 
-Activate it (Windows)
+Activate it (Windows)\
 venv\Scripts\activate
 
 
