@@ -76,7 +76,7 @@ set TAVILY_API_KEY="your_tavily_api_key_here"
 
 ## 💻 Usage
 
-Once your environment is set up and activated, run the main script to execute the workflow.\
+Once your environment is set up and activated, run the main script to execute the workflow.
 
 python main.py
 
