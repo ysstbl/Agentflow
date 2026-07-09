@@ -34,3 +34,10 @@ agentflow/
 ├── graph.py                # LangGraph orchestration and node compilation
 ├── main.py                 # Application entry point
 └── requirements.txt        # Python dependencies
+```
+⚙️ Installation
+1.Clone the repository:
+
+Bash
+git clone [https://github.com/yourusername/agentflow.git](https://github.com/yourusername/agentflow.git)
+cd agentflow
