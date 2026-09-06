@@ -1,6 +1,7 @@
 import operator
-from typing import Annotated, Literal, TypedDict
+from typing import Annotated, Literal, TypedDict, Optional
 from pydantic import BaseModel, Field
+
 
 class Classification(BaseModel):
     """A single routing decision: which agent to call with what query."""
@@ -16,6 +17,7 @@ class ClassificationResult(BaseModel):
 class AgentInput(TypedDict):
     """Simple input state for each subagent."""
     query: str
+    file_path: Optional[str]
 
 class AgentOutput(TypedDict):
     """Output from each subagent."""
@@ -24,6 +26,7 @@ class AgentOutput(TypedDict):
 
 class RouterState(TypedDict):
     query: str
+    file_path: Optional[str]
     classifications: list[Classification]
     results: Annotated[list[AgentOutput], operator.add]  # Reducer collects parallel results
     final_answer: str

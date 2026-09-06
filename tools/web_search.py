@@ -19,7 +19,7 @@ def fetch_webpage_content(url: str, timeout: float = 10.0) -> str:
     except Exception as e:
         return f"Error fetching {url}: {e!s}"
 
-@tool(parse_docstring=True)
+@tool
 def tavily_search(
     query: str,
     max_results: Annotated[int, InjectedToolArg] = 1,
